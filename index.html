@@ -96,7 +96,7 @@ async function generate() {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        model: "llama-3.1-8b-instant",
+        model: "openai/gpt-oss-20b",
         messages: [
           { role: "system", content: "You are an expert corporate UI developer. Output ONLY valid raw HTML starting with <!DOCTYPE html> and ending with </html>. STRICTLY NO markdown blocks and NO conversational filler." },
           { role: "user", content: message }
